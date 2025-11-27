@@ -2,23 +2,24 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 
-#x = []
-#y = []
+x = []
+y = []
 
-#with open("sample_data.csv", "r") as file:
-#    reader = csv.reader(file)
-#    next(reader)
-#    for row in reader:
-#        x.append(float(row[0]))
-#        y.append(float(row[1]))
+with open("sample_data.csv", "r") as file:
+    reader = csv.reader(file)
+    next(reader)
+    for row in reader:
+        x.append(float(row[0]))
+        y.append(float(row[1]))
 
-#plt.figure(figsize=(8,5))
-#plt.plot(x, y, marker="o", color='red', linestyle='-', linewidth=2)
-##plt.ylabel("y-values")
-#plt.grid(True)
+plt.figure(figsize=(8,5))
+plt.plot(x, y, marker="o", color='red', linestyle='-', linewidth=2)
+plt.xlabel("x-values")
+plt.ylabel("y-values")
+plt.grid(True)
 
 
-#plt.show()
+plt.show()
 
 
 #--- To create a code for generating prime numbers ---
